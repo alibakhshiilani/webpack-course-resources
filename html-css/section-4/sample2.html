@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+
+        *{
+            margin: 0;
+        }
+
+        body {
+            direction: ltr;
+        }
+
+        #container {
+            margin-right:auto;
+            margin-left: auto;
+            height: auto;
+            background-color: gray;
+        }
+
+        #box {
+            width:90%;
+            height: auto;
+            background-color: pink;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #img1 {
+            width:90%;
+            height: 300px;
+            background-color: black;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #img2 {
+            width:90%;
+            height: 300px;
+            background-color: black;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        hr {
+            margin-bottom:15px;
+            margin-top:15px;
+        }
+
+        @media only screen and (max-width:480px) {
+            #container {
+                width:100%;
+            }
+
+            
+        }
+
+        
+        @media only screen and (min-width:480px) {
+            #container {
+                width:90%;
+            }
+
+           
+
+        }
+
+        
+        @media only screen and (min-width:768px) {
+            #container {
+                width:80%;
+            }
+
+            
+            #box {
+                width:600px;
+            }
+
+
+            #img1 {
+                width:296px;
+                height: 169px;
+                float: right;
+                margin-left: 6px;
+            }
+
+            #img2 {
+                width:100px;
+                height: 100px;
+                float: left;
+                margin-right: 5px;
+            }
+          
+        }
+
+
+        
+        @media only screen and (min-width:960px) {
+      
+
+           
+        }
+
+
+        
+        @media only screen and (min-width:1200px) {
+            #container {
+                width:1170px;
+            }
+        }
+
+   </style>
+</head>
+<body>
+
+
+    <div id="container">
+       <div id="box">
+            <div id="img1"></div>
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt provident molestiae ipsam nulla voluptate recusandae sed pariatur minus nemo cumque mollitia quis aliquam tempore veritatis quas beatae laudantium, culpa numquam?</p>
+            <div class="clear"></div>
+            <hr>
+            <div id="img2"></div>
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde et ipsum iusto aperiam eveniet nemo soluta. Reprehenderit consequatur ex labore ratione, illum maxime voluptate quam mollitia eum tenetur sunt voluptas!</p>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

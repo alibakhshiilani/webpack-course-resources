@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 3000px;
+        }
+
+        #social-icons {
+            width: 200px;
+            padding: 0;
+            position: fixed;
+            left: -160px;
+            top:100px;
+        }
+
+       
+
+        #social-icons > .social-icon {
+            width:100%;
+            padding: 5px;
+            background-color: red;
+            margin-bottom: 2px;
+            position: relative;
+            left: 0;
+            transition:all 1s ease 300ms;
+            height: 48px;
+            box-sizing: content-box;
+            line-height: 48px;
+            color:white;
+            font-weight: bold;
+            text-align: right;
+            margin-right:100px;
+        }
+
+        #social-icons > .social-icon:nth-child(1){
+            background-color: darkred;
+        }
+
+        #social-icons > .social-icon:nth-child(2){
+            background-color: darkblue;
+        }
+
+        #social-icons > .social-icon:nth-child(3){
+            background-color: lightblue;
+        }
+
+        #social-icons > .social-icon:nth-child(4){
+            background-color: lightgreen;
+        }
+
+        #social-icons > .social-icon > img {
+            width:48px;
+            height: 48px;
+            float: right;
+        }
+
+        #social-icons > .social-icon:hover {
+            left: 160px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <div id="social-icons">
+        <div class="social-icon">
+            <img src="icons/instagram.png" alt="">
+            <span>اینستاگرام</span>
+        </div>
+        <div class="social-icon">
+            <img src="icons/telegram.png" alt="">
+            <span>تلگرام</span>
+        </div>
+        <div class="social-icon">
+            <img src="icons/twitter.png" alt="">
+            <span>توییتر</span>
+        </div>
+        <div class="social-icon">
+            <img src="icons/whatsapp.png" alt="">
+            <span>واستاپ</span>
+        </div>
+    </div>
+
+    
+</body>
+</html>

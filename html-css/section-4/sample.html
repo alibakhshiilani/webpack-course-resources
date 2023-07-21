@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="دوره های آموزشگاه فلان">
+    <meta name="keywords" content="HTML, CSS, JavaScript,ICDL,ICDL2">
+    <meta name="author" content="Ali">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+
+        *{
+            margin: 0;
+        }
+
+        @font-face {
+            font-family: Tanha;
+            src: url('fonts/Tanha.eot');
+            src: url('fonts/Tanha.eot?#iefix') format('opentype'),
+                url('fonts/Tanha.woff') format('woff'),
+                url('fonts/Tanha.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-color: gray;
+            direction: rtl;
+            font-family: Tanha,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #container {
+            margin-right:auto;
+            margin-left: auto;
+            height: auto;
+        }
+
+        .box {
+            background-color: white;
+            margin-bottom: 10px;
+            height: 400px;
+        }
+
+        .box > h2 {
+            text-align: center;
+            font-weight: normal;
+        }
+
+
+        .box > h3 {
+            text-align: center;
+            font-weight: normal;
+        }
+
+
+        .box > .bg-red {
+            background-color: darkred;
+        }
+
+        .box > .price {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        .box > .price > del {
+            color:red;
+        }
+
+        .box > .price > ins {
+            color:green;
+            font-weight: bold;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        @media only screen and (max-width:480px) {
+            #container {
+                width:100%;
+            }
+
+            .box {  
+                width: 90%;
+                margin-right: auto;
+                margin-left: auto;
+             
+            }
+        }
+
+        
+        @media only screen and (min-width:480px) {
+            #container {
+                width:90%;
+            }
+
+            .box {  
+                width: 90%;
+                margin-right: auto;
+                margin-left: auto;   
+            }
+
+        }
+
+        
+        @media only screen and (min-width:768px) {
+            #container {
+                width:80%;
+            }
+
+            .box {  
+                width: 48%;
+                float: right;
+                margin-right: 1.3333%;
+             
+            }
+        }
+
+
+        
+        @media only screen and (min-width:960px) {
+      
+
+            .box {  
+                width: 22.5%;
+                margin-right: 2%;
+             
+            }
+        }
+
+
+        
+        @media only screen and (min-width:1200px) {
+            #container {
+                width:1170px;
+            }
+        }
+
+   </style>
+</head>
+<body>
+
+
+    <div id="container">
+        <div class="box">
+            <h2>CIW</h2>
+            <hr>
+            <h3>طراحی وب</h3>
+            <hr>
+            <p class="bg-red">این دوره شامل HTML , CSS , Javascript .... می باشد</p>
+
+
+
+            <p class="price">
+
+                قیمت <del>320,000 تومان</del> &nbsp; &nbsp; <ins>200,000 تومان</ins>
+
+            </p>
+        </div>
+        <div class="box">
+            <h2>CIW</h2>
+            <hr>
+            <h3>طراحی وب</h3>
+            <hr>
+            <p class="bg-red">این دوره شامل HTML , CSS , Javascript .... می باشد</p>
+
+
+
+            <p class="price">
+
+                قیمت <del>320,000 تومان</del> &nbsp; &nbsp; <ins>200,000 تومان</ins>
+
+            </p>
+        </div>
+        <div class="box">
+            <h2>CIW</h2>
+            <hr>
+            <h3>طراحی وب</h3>
+            <hr>
+            <p class="bg-red">این دوره شامل HTML , CSS , Javascript .... می باشد</p>
+
+
+
+            <p class="price">
+
+                قیمت <del>320,000 تومان</del> &nbsp; &nbsp; <ins>200,000 تومان</ins>
+
+            </p>
+        </div>
+        <div class="box">
+            <h2>CIW</h2>
+            <hr>
+            <h3>طراحی وب</h3>
+            <hr>
+            <p class="bg-red">این دوره شامل HTML , CSS , Javascript .... می باشد</p>
+
+
+
+            <p class="price">
+
+                قیمت <del>320,000 تومان</del> &nbsp; &nbsp; <ins>200,000 تومان</ins>
+
+            </p>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+    
+</body>
+</html>

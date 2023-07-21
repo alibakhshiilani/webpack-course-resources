@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* this is for scroll test you can remove it */
+            height: 3000px;
+        }
+
+        #container {
+            width:960px;
+            height: 600px;
+            background-color: gray;
+            margin:0 auto;
+        }
+
+        .box {
+            width:150px;
+            height:150px;
+            position: absolute;
+        }
+
+        .box:nth-child(1){
+            background-color: darkred;
+            left:400px;
+            top:200px;
+            z-index: 1;
+        }
+
+        .box:nth-child(2){
+            background-color: rgba(146, 24, 120,0.5);
+            left:420px;
+            top:190px;
+            z-index: 2;
+        }
+
+        .box:nth-child(3) {
+            background-color: purple;
+            left:390px;
+            top:210px;
+        }
+
+        .box:nth-child(4){
+            background-color: green;
+            left:405px;
+            top:185px;
+        }
+       
+    </style>
+</head>
+<body>
+
+
+    <div id="container">
+        <div class="box">
+            <p>Hello World</p>
+        </div>
+        <div class="box">
+            <p>Hello World</p>
+        </div>
+        <!-- <div class="box">
+            <p>Hello World</p>
+        </div> -->
+        <!-- <div class="box">
+            <p>Hello World</p>
+        </div> -->
+
+    </div>
+
+
+</body>
+</html>
