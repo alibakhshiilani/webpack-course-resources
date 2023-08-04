@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت خبری</title>
+    <style>
+
+        *{
+            margin:0;
+        }
+
+        @font-face {
+            font-family: Tanha;
+            src: url('fonts/Tanha.eot');
+            src: url('fonts/Tanha.eot?#iefix') format('opentype'),
+                url('fonts/Tanha.woff') format('woff'),
+                url('fonts/Tanha.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            direction: rtl;
+            font-family: Tanha,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            height: auto;
+            background-color: gray;
+            margin:0 auto;
+        }
+
+
+        #header {
+            background-color: pink;
+            height: 150px;
+        }
+
+        #navbar {
+            background-color: lightblue;
+            height: 50px;
+            /* margin-bottom: 15px; */
+        }
+
+        #navbar > ul > li {
+            display: inline-block;
+            padding: 0 15px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        #navbar > ul > li > a {
+            text-decoration: none;
+        }
+        
+        .articles {
+            width:90%;
+            height: auto;
+            background-color: white;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom:20px;
+            border-radius: 20px;
+            box-shadow: 0 0 3px 1px white;
+        }
+
+        .articles > img {
+            width:100%;
+            height: 100px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .articles > h2 {
+            font-size: 16px;
+        }
+
+        .articles > p {
+            text-align: justify;
+            font-size: 14px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #header > h1 {
+            
+        } 
+
+        #header > img {
+            float: right;
+            margin-top: 20px;
+        }
+
+
+        .tri {
+            display: inline-block;
+            width:0;
+            height: 0;
+
+            border-top:5px solid transparent;
+            border-bottom:5px solid transparent;
+            border-right:5px solid blue;
+        }
+
+
+        @media only screen and (max-width:480px) {
+            .container {
+                width:100%;
+            }
+        }
+
+        @media only screen and (min-width:480px) {}
+
+        @media only screen and (min-width:768px) {
+            .articles {
+                float: right;
+                width:45%;
+                margin-right: 3.3333%;
+            }
+        }
+
+        @media only screen and (min-width:960px) {
+            .container {
+                width:80%;
+            }
+        }
+
+        @media only screen and (min-width:1200px) {
+            .container {
+                width:1170px;
+            }
+
+            .articles {
+                width:300px;
+                margin-right: 67.5px;
+                float: right;
+            }
+        }
+        
+
+
+    </style>
+</head>
+<body>
+
+
+    <header id="header" class="container">
+        <br>
+        <img src="images/logo.png" alt="">
+
+        <h1>شهر خبر</h1>
+        <h3>سایت رسمی خبر ایران</h3>
+    </header>
+    <nav id="navbar" class="container">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="news.html">News</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eius eos, quia incidunt alias sapiente, fugit ratione necessitatibus inventore neque molestias facilis beatae nobis quidem veritatis consequatur voluptatem tempora modi!</p>
+
+    </main>
+    
+</body>
+</html>

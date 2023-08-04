@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devslices-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .stage {
+            padding: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bottle {
+            margin:0 auto;
+            display: block;
+            max-width: 100%;
+        }
+
+        .slices {
+            position: absolute;
+            left:30%;
+            top:100px;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            max-width: 100%;
+        }
+
+
+        .slices:nth-of-type(2){
+            animation-name: slices1;
+        }
+
+        @keyframes slices1 {
+            0% {
+                left:30%;
+                top:100px;
+            }
+
+            50% {
+                left:33%;
+                top:105px;
+            }
+
+            100%{
+                left:30%;
+                top:100px;
+            }
+        }
+
+        .slices:nth-of-type(3){
+            animation-name: slices2;
+        }
+
+
+        @keyframes slices2 {
+            0% {
+                left:30%;
+                top:100px;
+            }
+
+            50% {
+                left:32%;
+                top:120px;
+            }
+
+            100%{
+                left:30%;
+                top:100px;
+            }
+        }
+
+        .slices:nth-of-type(4){
+            animation-name: slices3;
+        }
+
+        @keyframes slices3 {
+            0% {
+                left:30%;
+                top:100px;
+            }
+
+            50% {
+                left:28%;
+                top:90px;
+            }
+
+            100%{
+                left:30%;
+                top:100px;
+            }
+        }
+
+
+        @media only screen and (max-width:768px){
+            .stage > .slices {
+                left:0;
+            }
+
+            @keyframes slices1 {
+                0% {
+                    left:0;
+                    top:100px;
+                }
+
+                50% {
+                    left:3%;
+                    top:105px;
+                }
+
+                100%{
+                    left:0;
+                    top:100px;
+                }
+            }
+
+            @keyframes slices2 {
+                0% {
+                    left:0;
+                    top:100px;
+                }
+
+                50% {
+                    left:2%;
+                    top:120px;
+                }
+
+                100%{
+                    left:0;
+                    top:100px;
+                }
+            }
+
+            @keyframes slices3 {
+                0% {
+                    left:0;
+                    top:100px;
+                }
+
+                50% {
+                    left:-2%;
+                    top:90px;
+                }
+
+                100%{
+                    left:0;
+                    top:100px;
+                }
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="stage">
+        <img class="bottle" src="images/1e4fe557-8321-47d7-9adb-fc5580a7875c.png" alt="ZamZam">
+    
+        <img class="slices" src="images/306f735f-ee32-461c-8e17-fb4a04d475aa.png" alt="">
+        <img class="slices" src="images/836fd912-1ade-416d-bbdb-347dab6c9ae7.png" alt="">
+        <img class="slices" src="images/da8cbfd1-4777-4932-9b06-b79b93b040ae.png" alt="">
+    
+    </div>
+    
+    <div class="stage">
+        <img class="bottle" src="images/be98fe0d-23b5-4482-bf31-a6a40db1bcd5.png" alt="Water">
+    
+        <img class="slices" src="images/abbd1909-f893-4e09-a469-bceb7d809341.png" alt="">
+        <img class="slices" src="images/6752455a-5e0c-44ef-afb3-4679d1e391d5.png" alt="">
+        <img class="slices" src="images/da8cbfd1-4777-4932-9b06-b79b93b040ae.png" alt="">
+    
+    </div>
+    
+
+    <div class="stage">
+        <img class="bottle" src="images/df3c0ca6-70ef-4f8d-ba27-8cd2544bdc07.png" alt="ZamZam">
+    
+        <img class="slices" src="images/cd621452-0ba2-45b7-abf1-6b2bee581aa1.png" alt="">
+        <img class="slices" src="images/e41ede44-6b81-4ffa-a777-d7a6158661d1.png" alt="">
+        <img class="slices" src="images/da8cbfd1-4777-4932-9b06-b79b93b040ae.png" alt="">
+    
+    </div>
+    
+
+    <div class="stage">
+        <img class="bottle" src="images/99237c1b-e051-49c8-b7df-c93f086f1cef.png" alt="ZamZam">
+    
+        <img class="slices" src="images/306f735f-ee32-461c-8e17-fb4a04d475aa.png" alt="">
+        <img class="slices" src="images/836fd912-1ade-416d-bbdb-347dab6c9ae7.png" alt="">
+        <img class="slices" src="images/da8cbfd1-4777-4932-9b06-b79b93b040ae.png" alt="">
+    
+    </div>
+    
+
+</body>
+</html>
